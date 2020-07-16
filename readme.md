@@ -1,7 +1,16 @@
 
 ### 环境简介
 
-主要包含 `vim` + `ohmyzsh` + `tmux`
+主要包含 `vim` + `ohmyzsh` + `tmux` + `iterm2(macos)`
+
+
+### iterm2
+
+iterm2 版本为2.3
+
+主要安装了以下字体和主题：
++ git clone https://github.com/powerline/fonts.git
++ git clone https://github.com/dracula/iterm.git
 
 
 ### vim
@@ -80,5 +89,15 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 plugins=(git node npm yarn docker encode64 github pip python virtualenv extract colored-man-pages screen web-search zsh-             autosuggestions)
 ```
 
+```
+#高亮插件
+ sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.zsh/zsh-syntax-highlighting
+
+```
+
+常用主题有：
++ kay
++ dracula 配合iterm2
++ agnoster
 
 

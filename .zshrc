@@ -7,7 +7,7 @@ export ZSH=~/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="kay"
+ZSH_THEME="agnoster"
 TERM=xterm-256color
 
 # Uncomment the following line to use case-sensitive completion.
@@ -55,6 +55,8 @@ export UPDATE_ZSH_DAYS=13
 plugins=(git node npm yarn docker encode64 github pip python virtualenv extract colored-man-pages screen web-search zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
+
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # User configuration
 
