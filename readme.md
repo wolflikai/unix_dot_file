@@ -1,17 +1,7 @@
 
 ### 环境简介
 
-主要包含 `vim` + `ohmyzsh` + `tmux` + `iterm2(macos)`
-
-
-### iterm2
-
-iterm2 版本为2.3
-
-主要安装了以下字体和主题：
-+ git clone https://github.com/powerline/fonts.git
-+ git clone https://github.com/dracula/iterm.git
-
+主要包含 `vim` + `ohmyzsh` + `iterm2(macos)`
 
 ### vim
 版本为8.1
@@ -51,53 +41,15 @@ coc 项目地址：`https://github.com/neoclide/coc.nvim/wiki`
 升级gcc可参考:https://blog.csdn.net/chenjia6605/article/details/82757568
 在升级gcc之前可能需要升级链接器， 下载地址为：https://ftp.gnu.org/gnu/binutils/
 ```
-#### python安装
-使用miniconda进行安装
-```
-https://docs.conda.io/en/latest/miniconda.html
-```
-
-
-### tmux
-我的配置主要是将 `bind-key` 改为`ctrl + a`
-
-分屏键：
-`ctrl+a + |`
-`ctrl+a + -`
-
-`ctrl+a + 方向键`： 光标在窗口移动
-
-配置文件: `.tmux.conf`
-
-
 ### ohmyzsh
 
-
-安装：
-1.
-```bash
-apt install zsh
-sudo yum update && sudo yum -y install zsh
+安装:
 ```
-2.
-```bash
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-
-我配置的插件有：
-```
-plugins=(git node npm yarn docker encode64 github pip python virtualenv extract colored-man-pages screen web-search zsh-             autosuggestions)
-```
-
-```
-#高亮插件
- sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.zsh/zsh-syntax-highlighting
-
+./install_zsh.sh
 ```
 
 常用主题有：
-+ kay
-+ dracula 配合iterm2
 + agnoster
++ strug
 
 
