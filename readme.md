@@ -3,6 +3,16 @@
 
 主要包含 `vim` + `ohmyzsh` + `iterm2(macos)`
 
+
+### iterm2
+
+iterm2 版本为2.3
+
+主要安装了以下字体和主题：
++ git clone https://github.com/powerline/fonts.git
++ git clone https://github.com/dracula/iterm.git
+
+
 ### vim
 版本为8.1
 
@@ -46,6 +56,23 @@ coc 项目地址：`https://github.com/neoclide/coc.nvim/wiki`
 安装:
 ```
 ./install_zsh.sh
+
+### ohmyzsh
+
+安装：
+1.
+```bash
+apt install zsh
+sudo yum update && sudo yum -y install zsh
+```
+2.
+```bash
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+3.
+```
+#高亮插件
+ sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.zsh/zsh-syntax-highlighting
 ```
 
 常用主题有：
