@@ -11,6 +11,7 @@ then
     apt install -y zsh nodejs npm
 fi 
 
+
 if [ ! -d "$HOME/.oh-my-zsh" ]
 then
     echo "install oh my zsh"
