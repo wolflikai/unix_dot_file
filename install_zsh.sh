@@ -1,16 +1,12 @@
 #!/bin/bash
 
 echo "install zsh"
-if["$(uname)"=="Darwin"]
+if [ "$(uname) "==" Darwin"]
 then
-    brew install -y zsh nodejs npm
-fi
-
-if ["$(expr substr $(uname -s) 1 5)"=="Linux"]
-then
+    brew install zsh nodejs npm
+else
     apt install -y zsh nodejs npm
 fi 
-
 
 if [ ! -d "$HOME/.oh-my-zsh" ]
 then
@@ -21,6 +17,11 @@ fi
 if [ ! -d "$HOME/.zsh/zsh-syntax-highlighting" ]
 then
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.zsh/zsh-syntax-highlighting
+fi
+
+if [ ! -d "$HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions" ]
+then
+    git clone https://github.com/zsh-users/zsh-autosuggestions $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 fi
 
 rm ~/.zshrc
