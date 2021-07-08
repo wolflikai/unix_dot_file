@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "install zsh"
-if [ "$(uname) "==" Darwin"]
+if [ "$(uname)" == "Darwin" ]
 then
     brew install zsh nodejs npm
 else
