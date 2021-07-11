@@ -1,0 +1,18 @@
+BasedOnStyle: google
+IndentWidth: 4
+
+---
+Language: Cpp
+DerivePointerAlignment: true
+AccessModifierOffset: -4
+ContinuationIndentWidth: 4
+
+AlignConsecutiveAssignments: true
+
+AlignTrailingComments: true
+
+AllowShortFunctionsOnASingleLine: Empty
+
+BreakBeforeBraces: Allman
+
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
